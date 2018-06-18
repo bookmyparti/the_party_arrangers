@@ -16,14 +16,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
-<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="screen" property="" />
+<link href="resource/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="resource/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="resource/css/flexslider.css" type="text/css" media="screen" property="" />
 <!-- js -->
-<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="resource/js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <!-- font-awesome-icons -->
-<link href="static/css/font-awesome.css" rel="stylesheet"> 
+<link href="resource/css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -96,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</section>
 			<!-- flexSlider -->
-				<script defer src="static/js/jquery.flexslider.js"></script>
+				<script defer src="resource/js/jquery.flexslider.js"></script>
 				<script type="text/javascript">
 					$(window).load(function(){
 					  $('.flexslider').flexslider({
@@ -161,21 +161,21 @@ assumenda est, omnis dolor repellendus.</p>
 				<div class="agile-ser-tp">
 					<div class="col-md-4 w3-lft">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/4.jpg" class="img-responsive" alt="">
+							<img src="resource/images/4.jpg" class="img-responsive" alt="">
 						</div>
 						<h4>Party Locations</h4>
 						<p>Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus.</p>
 					</div>
 					<div class="col-md-4 w3-lft">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/5.jpg" class="img-responsive" alt="">
+							<img src="resource/images/5.jpg" class="img-responsive" alt="">
 						</div>
 						<h4>Catering & Food</h4>
 						<p>Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus.</p>
 					</div>
 					<div class="col-md-4 w3-lft">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/9.jpg" class="img-responsive" alt="">
+							<img src="resource/images/9.jpg" class="img-responsive" alt="">
 						</div>
 						<h4>Decor & Decorations</h4>
 						<p>Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus.</p>
@@ -193,7 +193,7 @@ assumenda est, omnis dolor repellendus.</p>
 				<div class="quicklinks-agile-info-top">
 					<div class="col-md-6 agile-info-top-left">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/1.jpg" class="img-responsive" alt="">
+							<img src="resource/images/1.jpg" class="img-responsive" alt="">
 						</div>
 					</div>
 					<div class="col-md-6 agile-info-top-right">
@@ -224,7 +224,7 @@ assumenda est, omnis dolor repellendus.</p>
 					</div>
 					<div class="col-md-6 agile-info-top-left">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/2.jpg" class="img-responsive" alt="">
+							<img src="resource/images/2.jpg" class="img-responsive" alt="">
 						</div>
 					</div>
 					
@@ -233,7 +233,7 @@ assumenda est, omnis dolor repellendus.</p>
 				<div class="quicklinks-agile-info-top">
 					<div class="col-md-6 agile-info-top-left">
 						<div class="w3agile_special_deals_grid_left_grid">
-							<img src="static/images/10.jpg" class="img-responsive" alt="">
+							<img src="resource/images/10.jpg" class="img-responsive" alt="">
 						</div>
 					</div>
 					<div class="col-md-6 agile-info-top-right">
@@ -287,8 +287,8 @@ assumenda est, omnis dolor repellendus.</p>
 <!-- //footer -->
 
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="static/js/move-top.js"></script>
-<script type="text/javascript" src="static/js/easing.js"></script>
+<script type="text/javascript" src="resource/js/move-top.js"></script>
+<script type="text/javascript" src="resource/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -299,10 +299,10 @@ assumenda est, omnis dolor repellendus.</p>
 </script>
 <!-- start-smoth-scrolling -->
 <!-- menu -->
-	<script type="text/javascript" src="static/js/main.js"></script>
+	<script type="text/javascript" src="resource/js/main.js"></script>
 <!-- //menu -->
 <!-- for bootstrap working -->
-	<script src="static/js/bootstrap.js"></script>
+	<script src="resource/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
