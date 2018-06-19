@@ -18,7 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //custom-theme -->
 <link href="resource/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="resource/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="resource/css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="resource/css/flexslider.css" type="text/css" media="screen" />
 <!-- js -->
 <script type="text/javascript" src="resource/js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -27,6 +27,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<style>
+/* Outer */
+.popup {
+width:100%;
+height:100%;
+display:none;
+position:fixed;
+top:0px;
+left:0px;
+background:rgba(0,0,0,0.75);
+}
+/* Inner */
+.popup-inner {
+max-width:700px;
+width:90%;
+padding:40px;
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+box-shadow:0px 2px 6px rgba(0,0,0,1);
+border-radius:3px;
+background:#fff;
+}
+/* Close Button */
+.popup-close {
+width:30px;
+height:30px;
+padding-top:4px;
+display:inline-block;
+position:absolute;
+top:0px;
+right:0px;
+transition:ease 0.25s all;
+-webkit-transform:translate(50%, -50%);
+transform:translate(50%, -50%);
+border-radius:1000px;
+background:rgba(0,0,0,0.8);
+font-family:Arial, Sans-Serif;
+font-size:20px;
+text-align:center;
+line-height:100%;
+color:#fff;
+}
+.popup-close:hover {
+-webkit-transform:translate(50%, -50%) rotate(180deg);
+transform:translate(50%, -50%) rotate(180deg);
+background:rgba(0,0,0,1);
+text-decoration:none;
+}
+</style>
 </head>
 <body>
 <!-- banner -->
@@ -50,6 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li class="m_nav_item" id="moble_nav_item_3"> <a href="about.html" class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="About Us">About Us</span></a></li>
 								<li class="m_nav_item" id="moble_nav_item_4"> <a href="work.html" class="link link--kumya"><i class="fa fa-building-o" aria-hidden="true"></i><span data-letters="Our Work">Our Work</span></a></li>
 								<li class="m_nav_item" id="moble_nav_item_6"> <a href="contact.html" class="link link--kumya"><i class="fa fa-envelope-o" aria-hidden="true"></i><span data-letters="Contact Us">Contact Us</span></a></li>
+								<li class="m_nav_item" id="moble_nav_item_7"> <a class="link link--kumya" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i><span data-letters="Login" data-popup-open="popup-login">Login</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -286,6 +339,22 @@ assumenda est, omnis dolor repellendus.</p>
 	</div>
 <!-- //footer -->
 
+<div class="popup" data-popup="popup-login">
+	<div class="popup-inner">
+		<div class="input-group margin-bottom-sm">
+  			<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  			<input class="form-control" type="text" placeholder="Email address">
+		</div>
+		<br/>
+		<div class="input-group">
+  			<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+  			<input class="form-control" type="password" placeholder="Password">
+		</div>
+		<br/>
+		<input class="btn btn-default" style="float: right;" type="button" value="Submit">
+		<a class="popup-close" data-popup-close="popup-login" href="#">x</a>
+	</div>
+</div>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="resource/js/move-top.js"></script>
 <script type="text/javascript" src="resource/js/easing.js"></script>
@@ -317,8 +386,22 @@ assumenda est, omnis dolor repellendus.</p>
 			*/
 								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+			$(function() {
+				//----- OPEN
+				$('[data-popup-open]').on('click', function(e) {
+				var targeted_popup_class = jQuery(this).attr('data-popup-open');
+				$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+				e.preventDefault();
+				});
+				//----- CLOSE
+				$('[data-popup-close]').on('click', function(e) {
+				var targeted_popup_class = jQuery(this).attr('data-popup-close');
+				$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+				e.preventDefault();
+				});
+				});				
 			});
+		
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
